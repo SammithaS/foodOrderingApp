@@ -11,3 +11,53 @@ This app incorporates XML files for frontend design, Java programming language f
 4) Secure Payments: The app ensures secure and hassle-free payments through integration with the Razorpay API.
 
 In summary, this app combines augmented reality, secure payment processing, and a user-friendly interface to offer a seamless and engaging experience for customers while providing efficient management capabilities for administrators.
+
+## Steps to clone the project
+
+```bash
+git clone https://github.com/SammithaS/foodOrderingApp.git
+```
+
+```bash
+cd AR-Ecommerce-App
+```
+
+**Do necessary changes if any and add your code to the staging area**
+
+```bash
+git add .
+```
+
+**Commit the changes with a text message.**
+
+```bash
+git commit -m "Message"
+```
+
+**Create a branch** 
+```bash
+git branch dev-branchname
+```
+
+**Push the code to your branch**
+```bash
+git push origin dev-branchname
+```
+
+## Steps to be followed if you have already cloned the project
+
+**Add the changes if you have done and commit it**
+```bash
+git add .
+git commit -m "Message"
+```
+
+**Switch to main branch if not in main**
+```bash
+git checkout -m main
+```
+
+**Pull the changes**
+```bash
+git pull origin main
+```
