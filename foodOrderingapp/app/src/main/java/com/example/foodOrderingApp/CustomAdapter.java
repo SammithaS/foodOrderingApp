@@ -22,7 +22,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHolder> {
+
     Button plus,minus,order,view3d;
+
     TextView quantity;
     int count=0;
     private Context context;
@@ -62,6 +64,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
                 intent.putExtra("id", String.valueOf(food_id.get(position)));
                 intent.putExtra("item", String.valueOf(item.get(position)));
                 intent.putExtra("price", String.valueOf(price.get(position)));
+
                 activity.startActivityForResult(intent, 2);
             }
         });
@@ -75,6 +78,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
        });
 
 
+
     }
 
     @Override
@@ -86,6 +90,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
 
 
         Button order,view3d;
+
         TextView idtxt,itemtxt,pricetxt,quantity;
         LinearLayout mainLayout;
 
@@ -95,8 +100,11 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
             itemtxt= itemView.findViewById(R.id.itemtxt);
             pricetxt = itemView.findViewById(R.id.pricetxt);
             mainLayout = itemView.findViewById(R.id.mainLayout);
+
             view3d=itemView.findViewById(R.id.View3d);
             order=itemView.findViewById(R.id.order2);
+
+
 
             Animation translate_anim = AnimationUtils.loadAnimation(context, R.anim.translate_anim);
             mainLayout.setAnimation(translate_anim);

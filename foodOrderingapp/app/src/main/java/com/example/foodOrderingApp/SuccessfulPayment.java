@@ -8,6 +8,7 @@ import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -15,12 +16,15 @@ import android.widget.Button;
 
 public class SuccessfulPayment extends AppCompatActivity {
 Button home;
+
     @SuppressLint({"MissingInflatedId", "NewApi"})
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_successful_payment);
         home=findViewById(R.id.home);
+
         String channelId = "channel1";
         NotificationChannel channel = new NotificationChannel(channelId, "hello",
                 NotificationManager.IMPORTANCE_HIGH);
@@ -38,6 +42,7 @@ Button home;
                 PendingIntent.FLAG_IMMUTABLE);
         mBuilder.setContentIntent(pi);
         nm.notify(121 ,mBuilder.build());
+
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

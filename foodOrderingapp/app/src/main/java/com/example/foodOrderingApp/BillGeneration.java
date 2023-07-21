@@ -1,19 +1,17 @@
 package com.example.foodOrderingApp;
 
+
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NotificationCompat;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
-import android.app.NotificationChannel;
-import android.app.NotificationManager;
-import android.app.PendingIntent;
-import android.content.Context;
+
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
-import android.util.Base64;
+
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -23,11 +21,6 @@ import com.razorpay.Checkout;
 import com.razorpay.PaymentResultListener;
 
 import org.json.JSONObject;
-
-
-
-
-
 
 
 public class BillGeneration extends AppCompatActivity implements PaymentResultListener {
@@ -75,11 +68,14 @@ TextView bill,name;
             options.put("name", "Foodie Tummy");
             options.put("description", "Reference No. #123456");
             options.put("image", "https://s3.amazonaws.com/rzp-mobile/images/rzp.jpg");
+
             options.put("theme.color", "#3399cc");
             options.put("currency", "INR");
             options.put("amount", (totalAmount*100));//pass amount in currency subunits
             options.put("prefill.email", "sammithas318@gmail.com");
             options.put("prefill.contact","7676493889");
+
+
             JSONObject retryObj = new JSONObject();
             retryObj.put("enabled", true);
             retryObj.put("max_count", 4);
@@ -102,10 +98,13 @@ TextView bill,name;
     @Override
     public void onPaymentError(int i, String s) {
 
+
             Intent i1=new Intent(getApplicationContext(),FailedPayment.class);
             startActivity(i1);
 
     }
+
+
 
 
 
