@@ -11,6 +11,7 @@ public class AddItem extends AppCompatActivity {
 
     EditText title_input, author_input, price_input;
     Button add_button;
+    int j;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
