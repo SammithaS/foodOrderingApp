@@ -22,7 +22,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHolder> {
-    Button plus,minus,order;
+
+    Button plus,minus,order,view3d;
+
     TextView quantity;
     int count=0;
     private Context context;
@@ -62,9 +64,18 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
                 intent.putExtra("id", String.valueOf(food_id.get(position)));
                 intent.putExtra("item", String.valueOf(item.get(position)));
                 intent.putExtra("price", String.valueOf(price.get(position)));
-                activity.startActivityForResult(intent, 1);
+
+                activity.startActivityForResult(intent, 2);
             }
         });
+       holder.view3d.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+               Intent intent = new Intent(context, ARactivity.class);
+               intent.putExtra("name", String.valueOf(item.get(position)));
+               activity.startActivity(intent);
+           }
+       });
 
 
 
@@ -77,7 +88,9 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
 
     class MyViewHolder extends RecyclerView.ViewHolder {
 
-        Button order;
+
+        Button order,view3d;
+
         TextView idtxt,itemtxt,pricetxt,quantity;
         LinearLayout mainLayout;
 
@@ -88,7 +101,10 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
             pricetxt = itemView.findViewById(R.id.pricetxt);
             mainLayout = itemView.findViewById(R.id.mainLayout);
 
-            order=itemView.findViewById(R.id.order);
+            view3d=itemView.findViewById(R.id.View3d);
+            order=itemView.findViewById(R.id.order2);
+
+
 
             Animation translate_anim = AnimationUtils.loadAnimation(context, R.anim.translate_anim);
             mainLayout.setAnimation(translate_anim);
