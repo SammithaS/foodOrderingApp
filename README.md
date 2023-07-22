@@ -19,7 +19,7 @@ git clone https://github.com/SammithaS/foodOrderingApp.git
 ```
 
 ```bash
-cd AR-Ecommerce-App
+cd foodOrderingApp
 ```
 
 **Do necessary changes if any and add your code to the staging area**
