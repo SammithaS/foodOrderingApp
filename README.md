@@ -64,7 +64,7 @@ git pull origin main
 
 # Screenshots
 Splash Screen:
-![WhatsApp Image 2023-07-26 at 7 11 47 PM](https://github.com/SammithaS/foodOrderingApp/assets/121117205/9ccc9c6f-2e26-4aa4-a755-46d3fa9c5660)
+![WhatsApp Image 2023-07-26 at 7 11 47 PM](https://github.com/SammithaS/foodOrderingApp/assets/121117205/9ccc9c6f-2e26-4aa4-a755-46d3fa9c5660|width=50)
 
 
 Home page:
