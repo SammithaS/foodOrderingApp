@@ -63,21 +63,22 @@ git pull origin main
 ```
 
 # Screenshots
-Splash Screen,Home page,Navigation Bar:
+# Splash Screen,Home page,Navigation Bar:
 ![Screenshot (188)](https://github.com/SammithaS/foodOrderingApp/assets/121117205/66161715-2eda-4adf-a113-6f57dd788052)
 
-Admin area:
+# Admin area:
 ![Screenshot (189)](https://github.com/SammithaS/foodOrderingApp/assets/121117205/f03a2971-64cc-4a47-b2f8-8536fe68b54b)
 ![Screenshot (190)](https://github.com/SammithaS/foodOrderingApp/assets/121117205/16ba9235-83af-4620-8849-787d7a7e2b93)
 
 
-User area:
+# User area:
+![Screenshot (193)](https://github.com/SammithaS/foodOrderingApp/assets/121117205/58c7e56a-8a2d-46e1-8dcc-6b2017653bfd)
+![Screenshot (194)](https://github.com/SammithaS/foodOrderingApp/assets/121117205/cc4aec35-2a92-4794-a984-33fbac5c24ca)
 
 
-3D View:
+# 3D View:
 
 ![Screenshot (185)](https://github.com/SammithaS/foodOrderingApp/assets/121117205/2629e6af-5de8-4fec-aeb0-ff14dbe1c6d6)
-
 ![Screenshot (192)](https://github.com/SammithaS/foodOrderingApp/assets/121117205/d3aada03-92b2-46ba-baf5-efe18ff03fc7)
 
 
